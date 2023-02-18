@@ -61,15 +61,6 @@ devServer: {
                     },
                   },
               },
-              {
-                test: /\.(woff|woff2|ttf)$/,
-                use: {
-                  loader: 'url-loader',
-                  options : {
-                    outputPath: "fonts",
-                  }
-                },
-              },
 
         ]
     },
@@ -78,6 +69,22 @@ devServer: {
             filename: "index.html",
             template: "./src/index.html",
         }),
+        new HtmlWebpackPlugin({
+          filename: "e-page.html",
+          template: "./src/e-page.html",
+      }),
+      new HtmlWebpackPlugin({
+        filename: "t-page.html",
+        template: "./src/t-page.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "sin.html",
+      template: "./src/sin.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "log.html",
+      template: "./src/log.html",
+    }),
         new MiniCssExtractPlugin({
             filename: 
             "assets/css/style.css"

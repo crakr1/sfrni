@@ -3,6 +3,9 @@
   \**********************************************************************************************************************/
 .navbar {
   background-color: #6D8B74;
+  position: fixed !important;
+  width: 100%;
+  z-index: 5;
 }
 .navbar .navbar-brand img {
   width: 60px;
@@ -18,52 +21,187 @@
   margin-left: 15px;
 }
 .navbar .navbar-nav .nav-item .nav-link {
-  color: #EFEAD8;
   border-radius: 5px;
   transition: all 0.5s ease;
 }
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  background-color: #939393;
-}
-.navbar .navbar-nav .nav-item .costm-btn {
-  background-color: #D0C9C0;
-  transition: all 0.5s ease;
-}
-.navbar .navbar-nav .nav-item .costm-btn:hover {
-  background-color: #939393;
+  background-color: #5F7161;
 }
 
 .the-first-section {
   padding-top: 150px;
   height: 80vh;
-  background-color: #84a588;
+  border-bottom: 2px solid #D0C9C0;
+  background-color: #EFEAD8;
 }
 .the-first-section .title-of-sfrni {
+  color: #5F7161;
   font-size: 30px;
   margin-bottom: 30px;
 }
 
 #servse {
-  padding: 60px;
-  background-color: #e5e2e2;
-}
-#servse h2 {
-  color: #5F7161;
-  margin-bottom: 40px;
+  background-color: #EFEAD8;
+  border-bottom: 2px solid #D0C9C0;
 }
 #servse .card {
   padding: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border: 1px;
-  background-color: #d6d6d6;
+  background-color: #D0C9C0;
+  box-shadow: -3px 3px 6px 1px #D0C9C0;
 }
 #servse .card .card-title {
   font-size: 25px;
   color: #5F7161;
 }
-#servse .card span {
-  color: #949494;
-  font-size: 14px;
+
+.jolh {
+  background-color: #EFEAD8;
+}
+.jolh .card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px;
+  background-color: #D0C9C0;
+}
+.jolh .card .jolh-info .pric {
+  padding: 2px 5px;
+  border-radius: 3px;
+  color: rgb(73, 73, 250);
+  background-color: rgb(164, 164, 252);
+}
+.jolh .card .jolh-info a {
+  margin-top: 10px;
+}
+
+footer {
+  padding: 60px;
+  background-color: #6D8B74;
+}
+footer iframe {
+  width: 100%;
+  height: 200px;
+  border: 1px solid;
+}
+footer .cont {
+  margin: 20px;
+}
+
+body .transport {
+  width: 100%;
+  background-color: #6D8B74;
+  padding: 20px 20px;
+  display: flex;
+}
+body .transport a {
+  color: #5F7161;
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+body .transport a:hover,
+body .transport a:active {
+  background-color: #7b917d;
+}
+body .transport span {
+  margin-right: 20px;
+  color: black;
+}
+body .accordion .card {
+  background-color: #EFEAD8;
+}
+body .info {
+  background-color: #EFEAD8;
+  border-bottom: 1px solid #D0C9C0;
+}
+body .info .desc {
+  margin-bottom: 20px;
+}
+body .gallery {
+  background-color: #EFEAD8;
+  border-bottom: 1px solid #D0C9C0;
+}
+body .buy {
+  background-color: #EFEAD8;
+}
+
+.sin-log-container {
+  width: 100%;
+  height: 100%;
+  background-color: #EFEAD8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sin-log-container .card {
+  padding: 40px;
+  border-radius: 5px;
+  background-color: #D0C9C0;
+}
+.sin-log-container .card .title {
+  font-size: 30px;
+}
+.sin-log-container .card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.sin-log-container .card button {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.sin-log-container .card .log-sin-btn {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.sin-log-container .card a {
+  text-decoration: none;
+  color: #5F7161;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: #5F7161;
+  margin-bottom: 40px;
+}
+
+section {
+  padding: 60px;
+}
+
+.costm-btn {
+  background-color: #5F7161 !important;
+  transition: all 1s ease;
+}
+
+.costm-btn:hover {
+  background-color: #7b917d !important;
+}
+
+.container, .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /*!*************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/@laylazi/bootstrap-rtl/dist/css/bootstrap-rtl.min.css ***!

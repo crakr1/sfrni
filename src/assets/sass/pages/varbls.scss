@@ -1,0 +1,39 @@
+img{
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+
+.title {
+    color: $title-color;
+    margin-bottom: 40px;
+}
+
+section {
+    padding: 60px ;
+}
+
+.costm-btn {
+    background-color: $btn-color !important;
+    transition: all 1s ease;
+}
+
+.costm-btn:hover  {
+    background-color: $btn-hover !important;
+}
+
+
+
+.container, .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}

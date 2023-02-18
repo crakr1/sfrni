@@ -1,0 +1,48 @@
+body {
+    .transport {
+        width: 100%;
+        background-color: $navAndFooter;
+        padding: 20px 20px ;
+        display: flex;
+        a { 
+            color: $title-color;
+            padding: 5px;
+            border-radius: 3px;
+            margin-right: 20px;
+            text-decoration: none;
+            transition: all 0.5s ease;
+        }
+        a:hover,
+        a:active {
+            background-color: $btn-hover;
+        }
+        span{
+            margin-right: 20px;
+            color: black;
+         }
+
+    }
+    .accordion {
+        .card {
+            background-color: $background-color;
+        }
+    }
+    .info {
+        background-color: $background-color;
+        border-bottom: 1px solid $card;
+
+        .desc {
+            margin-bottom: 20px;
+        }
+    }
+
+
+    .gallery {
+        background-color: $background-color;
+        border-bottom: 1px solid $card;
+    }
+
+    .buy {
+        background-color: $background-color;
+    }
+}

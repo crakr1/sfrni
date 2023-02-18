@@ -1,7 +1,12 @@
+// تنسيق الصفحة الاساسية
 @import "pages/style.scss";
-@import "pages/e-page.scss";
-@import "pages/t-page.scss";
-@import "pages/sginup.scss";
-@import "pages/login.scss";
 
+// تنسيق الصفحات الخاصة بالجولات
+@import "pages/page.scss";
+
+// تنسيق صفحات تسجيل الدخول وانشاء حساب
+@import "pages/sin-log.scss";
+
+// ملف يحتوي على لكلاسات والاليمنت المشتركه بين الصفحات 
+@import "./pages/varbls.scss"
 
