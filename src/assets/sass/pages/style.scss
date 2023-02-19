@@ -16,10 +16,12 @@ $card : #D0C9C0 ;
 
 
 .navbar {
-    background-color: $navAndFooter ;
-    position: fixed !important;
     width: 100%;
     z-index: 5;
+    background-color: $navAndFooter ;
+    position: fixed !important;
+    // flex-flow: nowrap;
+    
     
 
 
@@ -60,7 +62,7 @@ $card : #D0C9C0 ;
 
 .the-first-section {
     padding-top: 150px;
-    height: 80vh;
+    // height: 80vh;
     border-bottom: 2px solid $card;
     // background-image: url('../pages/');
     background-color: $background-color;
@@ -72,6 +74,18 @@ $card : #D0C9C0 ;
         font-size: 30px;
         margin-bottom: 30px;
     }
+
+    // .carousel-galrey{
+
+    //     .carousel-inner{
+
+    //         .carousel-item {
+    //             width: 400px;
+    //         }
+    //     }
+    // }
+
+
 }
 
 #servse {
@@ -127,14 +141,45 @@ footer {
     padding: 60px;
     background-color: $navAndFooter;
 
+    .title-of-iframe {
+        padding-bottom: 10px;
+    }
+
     iframe{
         width: 100%;
         height: 200px;
         border: 1px solid ;
     }
 
+    .contact-style {
+        display: flex;
+        align-items: center;
+    }
+
     .cont {
-        // color: $--;
-        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $card  ;
+    }
+
+    .social {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a{
+            padding: 7px;
+            border-radius: 5px;
+            color: $background-color;
+            text-decoration: none;
+            transition: all 0.8s ease;
+        }
+        a:hover{
+            color: $card;
+            background-color: $btn-color;
+        }
     }
 }

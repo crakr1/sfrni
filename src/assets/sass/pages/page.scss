@@ -1,48 +1,103 @@
+// تنسيق الوان الجزء العلوي والسلفي من الصفحة
+$pageNavAndFooter :#6D8B74;
+
+// تنسيق الوان الخلفية للاقسام
+$pageBackground-color : #EFEAD8;
+
+// تنتسيق لون العنواين
+$pageTitle-color : #5F7161;
+
+// تنسيق لون الزر 
+$pageBtn-color :#5F7161;
+$pageBtn-hover :#7b917d;
+
+// تنسيق الوان الكروت
+$pageCard : #D0C9C0 ;
+
+
+@mixin head{
+    width: 100%;
+    background-color: $pageNavAndFooter;
+    padding: 20px 20px ;
+}
+
+@mixin minLinks {
+    color: $pageTitle-color;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+@mixin minLinksHover{
+    background-color: $btn-hover;
+}
+
+@mixin spanInHeader {
+    margin-right: 20px;
+    color: black;
+}
+
+@mixin card {
+    background-color: $pageBackground-color ;
+}
+
+@mixin info {
+    background-color: $pageBackground-color ;
+        border-bottom: 1px solid $card;
+}
+
+@mixin desc {
+    margin-bottom: 20px;
+}
+
+@mixin gallery{
+    background-color: $pageBackground-color ;
+        border-bottom: 1px solid $card;
+}
+
+@mixin buy {
+    background-color: $pageBackground-color 
+}
+
 body {
     .transport {
-        width: 100%;
-        background-color: $navAndFooter;
-        padding: 20px 20px ;
-        display: flex;
+        @include head;
+
         a { 
-            color: $title-color;
-            padding: 5px;
-            border-radius: 3px;
-            margin-right: 20px;
-            text-decoration: none;
-            transition: all 0.5s ease;
+            @include minLinks;
         }
         a:hover,
         a:active {
-            background-color: $btn-hover;
+            @include minLinksHover()
         }
         span{
-            margin-right: 20px;
-            color: black;
+            @include spanInHeader()
          }
 
     }
     .accordion {
         .card {
-            background-color: $background-color;
+            @include card ;
         }
     }
     .info {
-        background-color: $background-color;
-        border-bottom: 1px solid $card;
+        @include info();
 
         .desc {
-            margin-bottom: 20px;
+            @include desc();
         }
     }
 
 
     .gallery {
-        background-color: $background-color;
-        border-bottom: 1px solid $card;
+        @include gallery()
     }
 
     .buy {
-        background-color: $background-color;
+        @include buy()
     }
 }
+
+

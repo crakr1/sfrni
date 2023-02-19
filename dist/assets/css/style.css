@@ -2,10 +2,10 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/sass/styles.scss ***!
   \**********************************************************************************************************************/
 .navbar {
-  background-color: #6D8B74;
-  position: fixed !important;
   width: 100%;
   z-index: 5;
+  background-color: #6D8B74;
+  position: fixed !important;
 }
 .navbar .navbar-brand img {
   width: 60px;
@@ -30,7 +30,6 @@
 
 .the-first-section {
   padding-top: 150px;
-  height: 80vh;
   border-bottom: 2px solid #D0C9C0;
   background-color: #EFEAD8;
 }
@@ -79,20 +78,47 @@ footer {
   padding: 60px;
   background-color: #6D8B74;
 }
+footer .title-of-iframe {
+  padding-bottom: 10px;
+}
 footer iframe {
   width: 100%;
   height: 200px;
   border: 1px solid;
 }
+footer .contact-style {
+  display: flex;
+  align-items: center;
+}
 footer .cont {
-  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D0C9C0;
+}
+footer .social {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .social a {
+  padding: 7px;
+  border-radius: 5px;
+  color: #EFEAD8;
+  text-decoration: none;
+  transition: all 0.8s ease;
+}
+footer .social a:hover {
+  color: #D0C9C0;
+  background-color: #5F7161;
 }
 
 body .transport {
   width: 100%;
   background-color: #6D8B74;
   padding: 20px 20px;
-  display: flex;
 }
 body .transport a {
   color: #5F7161;
@@ -167,6 +193,10 @@ body .buy {
   margin-top: 20px;
 }
 
+.invalid-feedback {
+  margin-top: -0.75rem !important;
+}
+
 img {
   width: 100%;
   border-radius: 3px;
@@ -195,8 +225,6 @@ section {
   padding-left: 0 !important;
   padding-right: 0 !important;
   width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
   max-width: 100%;
 }
 
