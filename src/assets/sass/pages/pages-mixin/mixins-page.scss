@@ -1,0 +1,71 @@
+// تنسيق الوان الجزء العلوي والسلفي من الصفحة
+$pageNavAndFooter :#6D8B74;
+
+// تنسيق الوان الخلفية للاقسام
+$pageBackground-color : #EFEAD8;
+
+// تنتسيق لون العنواين
+$pageTitle-color : #5F7161;
+
+// تنسيق لون الزر 
+$pageBtn-color :#5F7161;
+$pageBtn-hover :#7b917d;
+
+// تنسيق الوان الكروت
+$pageCard : #D0C9C0 ;
+
+
+@mixin head{
+    width: 100%;
+    padding: 20px 20px ;
+}
+
+@mixin minLinks {
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+@mixin spanInHeader {
+    margin-right: 20px;
+    color: black;
+}
+
+
+
+@mixin info {
+        border-bottom: 1px solid $pageCard  ;
+        ;
+}
+
+@mixin desc {
+    margin-bottom: 20px;
+}
+
+@mixin gallery{
+        border-bottom: 1px solid $pageCard;
+}
+
+@mixin overlay{
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:  fixed ;
+}
+
+@mixin overlay-img {
+    width: 65%;
+}
+
+@mixin button {
+    margin-top: 20px;
+}
+

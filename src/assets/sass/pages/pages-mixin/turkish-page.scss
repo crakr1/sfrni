@@ -1,0 +1,82 @@
+@import "./mixins-page.scss";
+
+// تنسيق الوان الجزء العلوي والسلفي من الصفحة
+$turkish-pageNavAndFooter :#820000;
+
+// تنسيق الوان الخلفية للاقسام
+$turkish-pageBackground-color : #F2DEBA;
+
+// تنتسيق لون العنواين
+$turkish-pageTitle-color : #5F7161;
+
+// تنسيق لون الزر 
+$turkish-btn-color :#4E6C50;
+$turkish-btn-hover :rgb(105, 111, 106);
+
+// تنسيق الوان الكروت
+$turkish-pageCard : #D0C9C0 ;
+
+
+body {
+    .turkish-transport {
+        @include head;
+        background-color: $turkish-pageNavAndFooter;
+
+        .turkish-a { 
+            @include minLinks;
+            color: $turkish-pageBackground-color;
+        }
+        .turkish-a:hover,
+        .turkish-a:active {
+            background-color: $turkish-btn-hover;
+        }
+        .turkish-span{
+            @include spanInHeader();
+            color: black;
+         }
+
+    }
+    .accordion {
+        .card {
+            background-color: $turkish-pageBackground-color ;
+        }
+    }
+    .turkish-info {
+        @include info();
+        background-color: $turkish-pageBackground-color ;
+
+
+        .turkish-desc {
+            @include desc();
+        }
+    }
+
+
+    .turkish-gallery {
+        @include gallery();
+        background-color: $turkish-pageBackground-color ;
+
+        .full-gallery-gallery{
+
+
+            .turkish-costm-btn{
+                @include button;
+                background-color: $egypt-btn;
+            }
+
+            .overlay{
+                @include overlay;
+                background-color: $egypt-pageNavAndFooter;
+
+
+                img{
+                    @include overlay-img;
+                }
+            }
+        }
+    }
+
+    .turkish-buy {
+        background-color: $turkish-pageBackground-color 
+    }
+}

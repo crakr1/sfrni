@@ -115,45 +115,6 @@ footer .social a:hover {
   background-color: #5F7161;
 }
 
-body .transport {
-  width: 100%;
-  background-color: #6D8B74;
-  padding: 20px 20px;
-}
-body .transport a {
-  color: #5F7161;
-  padding: 5px;
-  border-radius: 3px;
-  margin-right: 20px;
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-body .transport a:hover,
-body .transport a:active {
-  background-color: #7b917d;
-}
-body .transport span {
-  margin-right: 20px;
-  color: black;
-}
-body .accordion .card {
-  background-color: #EFEAD8;
-}
-body .info {
-  background-color: #EFEAD8;
-  border-bottom: 1px solid #D0C9C0;
-}
-body .info .desc {
-  margin-bottom: 20px;
-}
-body .gallery {
-  background-color: #EFEAD8;
-  border-bottom: 1px solid #D0C9C0;
-}
-body .buy {
-  background-color: #EFEAD8;
-}
-
 .sin-log-container {
   width: 100%;
   height: 100%;
@@ -230,6 +191,129 @@ section {
 
 html {
   scroll-behavior: smooth;
+}
+
+body .egypt-transport {
+  width: 100%;
+  padding: 20px 20px;
+  background-color: #183A1D;
+}
+body .egypt-transport .egypt-costm-btn {
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  color: #F0A04B;
+}
+body .egypt-transport .egypt-costm-btn:hover,
+body .egypt-transport .egypt-costm-btn:active {
+  background-color: #edb87f;
+}
+body .egypt-transport .span-egypt {
+  margin-right: 20px;
+  color: black;
+  color: #E1EEDD;
+}
+body .accordion-egypt .card-egypt {
+  background-color: #FEFBE9;
+}
+body .info-egypt {
+  border-bottom: 1px solid #D0C9C0;
+  background-color: #FEFBE9;
+}
+body .info-egypt .desc-egypt {
+  margin-bottom: 20px;
+}
+body .gallery-egypt {
+  border-bottom: 1px solid #D0C9C0;
+  background-color: #FEFBE9;
+}
+body .gallery-egypt .full-gallery-gallery .egypt-costm-btn {
+  margin-top: 20px;
+  background-color: #F0A04B;
+}
+body .gallery-egypt .full-gallery-gallery .overlay {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #183A1D;
+}
+body .gallery-egypt .full-gallery-gallery .overlay img {
+  width: 65%;
+}
+body .buy-egypt {
+  background-color: #FEFBE9;
+}
+body .buy-egypt .egypt-costm-btn {
+  background-color: #F0A04B;
+}
+
+body .turkish-transport {
+  width: 100%;
+  padding: 20px 20px;
+  background-color: #820000;
+}
+body .turkish-transport .turkish-a {
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  color: #F2DEBA;
+}
+body .turkish-transport .turkish-a:hover,
+body .turkish-transport .turkish-a:active {
+  background-color: rgb(105, 111, 106);
+}
+body .turkish-transport .turkish-span {
+  margin-right: 20px;
+  color: black;
+  color: black;
+}
+body .accordion .card {
+  background-color: #F2DEBA;
+}
+body .turkish-info {
+  border-bottom: 1px solid #D0C9C0;
+  background-color: #F2DEBA;
+}
+body .turkish-info .turkish-desc {
+  margin-bottom: 20px;
+}
+body .turkish-gallery {
+  border-bottom: 1px solid #D0C9C0;
+  background-color: #F2DEBA;
+}
+body .turkish-gallery .full-gallery-gallery .turkish-costm-btn {
+  margin-top: 20px;
+  background-color: #F0A04B;
+}
+body .turkish-gallery .full-gallery-gallery .overlay {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #183A1D;
+}
+body .turkish-gallery .full-gallery-gallery .overlay img {
+  width: 65%;
+}
+body .turkish-buy {
+  background-color: #F2DEBA;
 }
 /*!*************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/@laylazi/bootstrap-rtl/dist/css/bootstrap-rtl.min.css ***!

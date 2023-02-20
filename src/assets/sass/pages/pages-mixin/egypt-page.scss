@@ -1,0 +1,86 @@
+@import "./mixins-page.scss";
+
+// تنسيق الوان الجزء العلوي والسلفي من الصفحة
+$egypt-pageNavAndFooter :#183A1D;
+
+// تنسيق الوان الخلفية للاقسام
+$egypt-pageBackground-color : #FEFBE9;
+
+// تنتسيق لون العنواين
+$egypt-pageTitle-color : #F0A04B;
+
+// تنسيق لون الزر 
+$egypt-btn :#F0A04B;
+$egypt-btn-hover :#edb87f;
+
+// تنسيق الوان الكروت
+$egypt-pageCard : #E1EEDD ;
+
+
+body {
+    .egypt-transport {
+        @include head;
+        background-color: $egypt-pageNavAndFooter;
+
+        .egypt-costm-btn { 
+            @include minLinks;
+            color: $egypt-btn;
+        }
+        .egypt-costm-btn:hover,
+        .egypt-costm-btn:active {
+            background-color: $egypt-btn-hover;
+        }
+        .span-egypt{
+            @include spanInHeader();
+            color: $egypt-pageCard;
+         }
+
+    }
+    .accordion-egypt {
+        .card-egypt {
+            background-color: $egypt-pageBackground-color ;
+        }
+    }
+    .info-egypt {
+        @include info();
+        background-color: $egypt-pageBackground-color ;
+
+
+        .desc-egypt {
+            @include desc();
+        }
+    }
+
+
+    .gallery-egypt {
+        @include gallery();
+        background-color: $egypt-pageBackground-color ;
+
+        .full-gallery-gallery{
+
+
+            .egypt-costm-btn{
+                @include button;
+                background-color: $egypt-btn;
+            }
+
+            .overlay{
+                @include overlay;
+                background-color: $egypt-pageNavAndFooter;
+
+
+                img{
+                    @include overlay-img;
+                }
+            }
+        }
+    }
+
+    .buy-egypt {
+        background-color: $egypt-pageBackground-color; 
+
+        .egypt-costm-btn{
+            background-color: $egypt-btn;
+        }
+    }
+}

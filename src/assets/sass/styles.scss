@@ -1,9 +1,6 @@
 // تنسيق الصفحة الاساسية
 @import "pages/style.scss";
 
-// تنسيق الصفحات الخاصة بالجولات
-@import "pages/page.scss";
-
 // تنسيق صفحات تسجيل الدخول وانشاء حساب
 @import "pages/sin-log.scss";
 
@@ -11,5 +8,6 @@
 @import "./pages/varbls.scss";
 
 
-//  خاص بصفحات الجولات  mixin 
-@import "./pages/mixins-page.scss";
+@import "./pages/pages-mixin/egypt-page.scss";
+@import "./pages/pages-mixin/turkish-page.scss";
+

@@ -25,3 +25,28 @@ import '@fortawesome/fontawesome-free/js/all.min'
       });
     }, false);
   })();
+
+
+  // let overlayButton = document.querySelector("overlay");
+  // function overlayButton() {
+  //   let element = document.getElementById("overlay-carousel");
+  //   element.classList.remove("d-none");
+  // }
+// overlayButton.addEventListener("click" , function(e){
+//   overlayButton.classList.remove("d-none")
+// })
+  // if{
+  //   overlayButton
+  // }
+let overlay = document.querySelector(".overlay");
+let removeClass = document.querySelector("#overlay");
+let addClass = document.querySelector("#overlay-none");
+
+
+removeClass.addEventListener('click' , function() {
+  overlay.classList.remove("d-none")
+})
+
+addClass.addEventListener('click' , function() {
+  overlay.classList.add("d-none")
+})
