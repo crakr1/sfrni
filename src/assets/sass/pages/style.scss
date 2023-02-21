@@ -61,32 +61,26 @@ $card : #D0C9C0 ;
 }
 
 .the-first-section {
-    padding-top: 150px;
-    // height: 80vh;
+    padding-top: 140px;
     border-bottom: 2px solid $card;
-    // background-image: url('../pages/');
     background-color: $background-color;
 
+    .title{
+
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
 
 
-    .title-of-sfrni {
-        color: $title-color;
-        font-size: 30px;
-        margin-bottom: 30px;
+        .title-of-sfrni {
+            color: $title-color;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
     }
 
-    // .carousel-galrey{
-
-    //     .carousel-inner{
-
-    //         .carousel-item {
-    //             width: 400px;
-    //         }
-    //     }
-    // }
-
-
 }
+
 
 #servse {
     background-color: $background-color;
@@ -116,7 +110,6 @@ $card : #D0C9C0 ;
         margin-bottom: 20px;
         border:  1px;
         background-color: $card;
-
 
 
 
