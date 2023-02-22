@@ -3,7 +3,7 @@
   \**********************************************************************************************************************/
 .navbar {
   width: 100%;
-  z-index: 5;
+  z-index: 100;
   background-color: #6D8B74;
   position: fixed !important;
 }
@@ -79,45 +79,69 @@
   margin-top: 10px;
 }
 
-footer {
+.contact {
   padding: 60px;
   background-color: #6D8B74;
 }
-footer .title-of-iframe {
+.contact .title-of-iframe {
   padding-bottom: 10px;
 }
-footer iframe {
+.contact iframe {
   width: 100%;
   height: 200px;
   border: 1px solid;
 }
-footer .contact-style {
+.contact .contact-style {
   display: flex;
   align-items: center;
 }
-footer .cont {
+.contact .cont {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 20px;
   border-bottom: 1px solid #D0C9C0;
 }
-footer .social {
+.contact .social {
   padding-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-footer .social a {
+.contact .social a {
   padding: 7px;
   border-radius: 5px;
   color: #EFEAD8;
   text-decoration: none;
   transition: all 0.8s ease;
 }
-footer .social a:hover {
+.contact .social a:hover {
   color: #D0C9C0;
   background-color: #5F7161;
+}
+
+.transport {
+  width: 100%;
+  padding: 20px 20px;
+  background-color: #6D8B74;
+}
+.transport .link a {
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  color: #D0C9C0;
+  text-decoration: none;
+}
+.transport .link a:hover {
+  color: #7b917d;
+  background-color: #D0C9C0;
+}
+.transport span {
+  font-size: large;
+  margin-right: 20px;
+  color: black;
 }
 
 .sin-log-container {
@@ -261,6 +285,48 @@ body .buy-egypt .egypt-costm-btn {
   background-color: #F0A04B;
 }
 
+.egypt-contact {
+  background-color: #183A1D;
+}
+.egypt-contact .title-of-iframe {
+  padding: 10px;
+  color: #F0A04B;
+}
+.egypt-contact iframe {
+  width: 100%;
+  height: 200px;
+  border: 1px solid;
+}
+.egypt-contact .contact-style {
+  display: flex;
+  align-items: center;
+}
+.egypt-contact .cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D0C9C0;
+  color: #F0A04B;
+}
+.egypt-contact .social {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.egypt-contact .social .a-social {
+  padding: 7px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.8s ease;
+  color: #F0A04B;
+}
+.egypt-contact .social .a-social:hover {
+  color: #edb87f;
+  background-color: #F0A04B;
+}
+
 body .turkish-transport {
   width: 100%;
   padding: 20px 20px;
@@ -299,7 +365,7 @@ body .turkish-gallery {
 }
 body .turkish-gallery .full-gallery-gallery .turkish-costm-btn {
   margin-top: 20px;
-  background-color: #F0A04B;
+  background-color: #4E6C50;
 }
 body .turkish-gallery .full-gallery-gallery .overlay {
   top: 0;
@@ -312,13 +378,59 @@ body .turkish-gallery .full-gallery-gallery .overlay {
   justify-content: center;
   align-items: center;
   position: fixed;
-  background-color: #183A1D;
+  background-color: #820000;
 }
 body .turkish-gallery .full-gallery-gallery .overlay img {
   width: 65%;
 }
 body .turkish-buy {
   background-color: #F2DEBA;
+}
+
+.turkish-contact {
+  background-color: #820000;
+}
+.turkish-contact .turkish-title {
+  color: #5F7161;
+  padding: 20px;
+}
+.turkish-contact .title-of-iframe {
+  padding: 10px;
+  color: #4E6C50;
+}
+.turkish-contact iframe {
+  width: 100%;
+  height: 200px;
+  border: 1px solid;
+}
+.turkish-contact .contact-style {
+  display: flex;
+  align-items: center;
+}
+.turkish-contact .cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D0C9C0;
+  color: #4E6C50;
+}
+.turkish-contact .social {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.turkish-contact .social .a-social {
+  padding: 7px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.8s ease;
+  color: #4E6C50;
+}
+.turkish-contact .social .a-social:hover {
+  color: #edb87f;
+  background-color: #4E6C50;
 }
 /*!*************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/@laylazi/bootstrap-rtl/dist/css/bootstrap-rtl.min.css ***!

@@ -84,3 +84,38 @@ body {
         }
     }
 }
+
+.egypt-contact {
+    background-color: $egypt-pageNavAndFooter;
+
+    .title-of-iframe {
+       @include title-of-iframe;
+       color: $egypt-btn
+    }
+
+    iframe{
+       @include iframe;
+    }
+
+    .contact-style {
+        @include contact-style;
+    }
+
+    .cont {
+      @include cont;
+      color: $egypt-btn;
+    }
+
+    .social {
+       @include social ;
+
+        .a-social{
+            @include a-social;
+            color: $egypt-btn;
+        }
+        .a-social:hover{
+            color: $egypt-btn-hover;
+            background-color: $egypt-btn;
+        }
+    }
+}

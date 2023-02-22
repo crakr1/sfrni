@@ -61,12 +61,12 @@ body {
 
             .turkish-costm-btn{
                 @include button;
-                background-color: $egypt-btn;
+                background-color: $turkish-btn-color;
             }
 
             .overlay{
                 @include overlay;
-                background-color: $egypt-pageNavAndFooter;
+                background-color: $turkish-pageNavAndFooter;
 
 
                 img{
@@ -78,5 +78,45 @@ body {
 
     .turkish-buy {
         background-color: $turkish-pageBackground-color 
+    }
+}
+
+.turkish-contact {
+    background-color: $turkish-pageNavAndFooter;
+
+    .turkish-title {
+        color: $btn-color;
+        @include turkish-title
+    }
+
+    .title-of-iframe {
+       @include title-of-iframe;
+       color: $turkish-btn-color
+    }
+
+    iframe{
+       @include iframe;
+    }
+
+    .contact-style {
+        @include contact-style;
+    }
+
+    .cont {
+      @include cont;
+      color: $turkish-btn-color;
+    }
+
+    .social {
+       @include social ;
+
+        .a-social{
+            @include a-social;
+            color: $turkish-btn-color;
+        }
+        .a-social:hover{
+            color: $egypt-btn-hover;
+            background-color: $turkish-btn-color;
+        }
     }
 }

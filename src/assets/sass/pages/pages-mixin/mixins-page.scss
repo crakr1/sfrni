@@ -37,7 +37,6 @@ $pageCard : #D0C9C0 ;
 
 @mixin info {
         border-bottom: 1px solid $pageCard  ;
-        ;
 }
 
 @mixin desc {
@@ -69,3 +68,44 @@ $pageCard : #D0C9C0 ;
     margin-top: 20px;
 }
 
+
+@mixin turkish-title {
+    padding: 20px;
+}
+
+@mixin title-of-iframe {
+    padding: 10px;
+}
+
+@mixin iframe{
+    width: 100%;
+    height: 200px;
+    border: 1px solid ;
+}
+
+@mixin contact-style{
+    display: flex;
+    align-items: center;
+}
+
+@mixin cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $card  ;
+}
+
+@mixin social {
+    padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+@mixin a-social {
+    padding: 7px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.8s ease;
+}

@@ -1,3 +1,49 @@
+// تنسيق الوان الجزء العلوي والسلفي من الصفحة
+$navAndFooter :#6D8B74;
+
+// تنسيق الوان الخلفية للاقسام
+$background-color : #EFEAD8;
+
+// تنتسيق لون العنواين
+$title-color : #5F7161;
+
+// تنسيق لون الزر 
+$btn-color :#5F7161;
+$btn-hover :#7b917d;
+
+// تنسيق الوان الكروت
+$card : #D0C9C0 ;
+
+.transport {
+    width: 100%;
+    padding: 20px 20px ;
+    background-color: $navAndFooter;
+
+    .link {
+
+
+        a {
+            padding: 5px;
+            border-radius: 3px;
+            margin-right: 20px;
+            text-decoration: none;
+            transition: all 0.5s ease;
+            color: $card;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $btn-hover;
+            background-color: $card;
+        }
+    }
+
+    span{
+        font-size: large;
+        margin-right: 20px;
+        color: black;
+    }
+}
+
 .sin-log-container {
     width: 100%;
     height: 100%;

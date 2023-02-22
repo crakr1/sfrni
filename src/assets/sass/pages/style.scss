@@ -17,7 +17,7 @@ $card : #D0C9C0 ;
 
 .navbar {
     width: 100%;
-    z-index: 5;
+    z-index: 100;
     background-color: $navAndFooter ;
     position: fixed !important;
     // flex-flow: nowrap;
@@ -130,7 +130,7 @@ $card : #D0C9C0 ;
 }
 
 
-footer {
+.contact {
     padding: 60px;
     background-color: $navAndFooter;
 
