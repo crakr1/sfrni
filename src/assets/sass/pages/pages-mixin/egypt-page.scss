@@ -1,121 +1,116 @@
 @import "./mixins-page.scss";
 
 // تنسيق الوان الجزء العلوي والسلفي من الصفحة
-$egypt-pageNavAndFooter :#183A1D;
+$pageNavAndFooter :#D7E9B9;
 
 // تنسيق الوان الخلفية للاقسام
-$egypt-pageBackground-color : #FEFBE9;
+$pageBackground-color : #FFFBAC;
 
 // تنتسيق لون العنواين
-$egypt-pageTitle-color : #F0A04B;
+$pageTitle-color : #FAAB78;
 
 // تنسيق لون الزر 
-$egypt-btn :#F0A04B;
-$egypt-btn-hover :#edb87f;
+$btn-color :#9f826d;
+$btn-hover :#f8ddca;
 
 // تنسيق الوان الكروت
-$egypt-pageCard : #E1EEDD ;
+$pageCard : #D7E9B9 ;
 
 
-body {
-    .egypt-transport {
+.egypt {
+    .transport {
         @include head;
-        background-color: $egypt-pageNavAndFooter;
+        background-color: $pageNavAndFooter;
 
-        .egypt-costm-btn { 
+        .a { 
             @include minLinks;
-            color: $egypt-btn;
+            color: $pageBackground-color;
+
+            &:hover,
+            &:active {
+                background-color: $btn-hover;
+            }
         }
-        .egypt-costm-btn:hover,
-        .egypt-costm-btn:active {
-            background-color: $egypt-btn-hover;
-        }
-        .span-egypt{
+        .span{
             @include spanInHeader();
-            color: $egypt-pageCard;
+            color: black;
          }
 
     }
-    .accordion-egypt {
-        .card-egypt {
-            background-color: $egypt-pageBackground-color ;
+    .accordion {
+        .card {
+            background-color: $pageBackground-color ;
         }
     }
-    .info-egypt {
+    .info {
         @include info();
-        background-color: $egypt-pageBackground-color ;
+        background-color: $pageBackground-color ;
 
 
-        .desc-egypt {
+        .desc {
             @include desc();
         }
     }
 
 
-    .gallery-egypt {
-        @include gallery();
-        background-color: $egypt-pageBackground-color ;
+    .gallery {
+        background-color: $pageBackground-color;
+        .close {
+            font-size: 1.5rem;
+          }
+          
+          .col-12 img {
+            cursor: pointer;
+            width: 100%;
+          }
+          
+          .col-12 img:hover {
+            opacity: 1;
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          }
 
-        .full-gallery-gallery{
-
-
-            .egypt-costm-btn{
-                @include button;
-                background-color: $egypt-btn;
-            }
-
-            .overlay{
-                @include overlay;
-                background-color: $egypt-pageNavAndFooter;
-
-
-                img{
-                    @include overlay-img;
-                }
-            }
-        }
+          .modal {
+            top: 10% ;
+          }
     }
-
-    .buy-egypt {
-        background-color: $egypt-pageBackground-color; 
-
-        .egypt-costm-btn{
-            background-color: $egypt-btn;
+    .contact {
+        background-color: $pageNavAndFooter;
+    
+        .title {
+            color: $btn-color;
+            @include turkish-title
+        }
+    
+        .title-of-iframe {
+           @include title-of-iframe;
+           color: $btn-color
+        }
+    
+        iframe{
+           @include iframe;
+        }
+    
+        .contact-style {
+            @include contact-style;
+        }
+    
+        .cont {
+          @include cont;
+          color: $btn-color;
+        }
+    
+        .social {
+           @include social ;
+    
+            .a-social{
+                @include a-social;
+                color: $btn-color;
+            }
+            .a-social:hover{
+                color: $btn-hover;
+                background-color: $btn-color;
+            }
         }
     }
 }
 
-.egypt-contact {
-    background-color: $egypt-pageNavAndFooter;
-
-    .title-of-iframe {
-       @include title-of-iframe;
-       color: $egypt-btn
-    }
-
-    iframe{
-       @include iframe;
-    }
-
-    .contact-style {
-        @include contact-style;
-    }
-
-    .cont {
-      @include cont;
-      color: $egypt-btn;
-    }
-
-    .social {
-       @include social ;
-
-        .a-social{
-            @include a-social;
-            color: $egypt-btn;
-        }
-        .a-social:hover{
-            color: $egypt-btn-hover;
-            background-color: $egypt-btn;
-        }
-    }
-}

@@ -14,13 +14,15 @@ $btn-hover :#7b917d;
 // تنسيق الوان الكروت
 $card : #D0C9C0 ;
 
+@font-face {
+    font-family: "cairoFont";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
 
 .navbar {
     width: 100%;
-    z-index: 100;
     background-color: $navAndFooter ;
-    position: fixed !important;
-    // flex-flow: nowrap;
     
     
 
@@ -60,25 +62,60 @@ $card : #D0C9C0 ;
     }
 }
 
-.the-first-section {
-    padding-top: 140px;
-    border-bottom: 2px solid $card;
-    background-color: $background-color;
-
-    .title{
-
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-
-
-        .title-of-sfrni {
-            color: $title-color;
-            font-size: 40px;
-            margin-bottom: 30px;
-        }
+.top-carousel {
+    padding: 0;
+    .row {
+        display: block !important;
     }
 
+    .carousel {
+
+        .carousel-item {
+            img {
+                height: 500px;
+                margin-bottom: 0;
+                border-radius: 0;
+
+            }
+
+            .overlay {
+                position: absolute;
+                background-color: rgb(95, 113, 97 ,0.7);
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                display: flex !important;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+                z-index: 1;
+
+                h1{
+                    padding-bottom: 30px;
+                }
+
+                h6{
+                    color: $background-color;
+                    padding-bottom: 25px;
+                }
+            }
+        }
+
+        .carousel-indicators {
+
+            li {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin: 20px 5px 0px 0px ;
+
+                &.active {
+                    background-color: $btn-hover;
+                }
+            }
+        }
+    }
 }
 
 
@@ -173,6 +210,22 @@ $card : #D0C9C0 ;
         a:hover{
             color: $card;
             background-color: $btn-color;
+        }
+    }
+}
+
+
+@media (max-width : 767px) {
+
+    .carousel{
+        .overlay {
+
+            h1 {
+                font-size: 25px;
+            }
+            h6 {
+                font-size: 13px;
+            }
         }
     }
 }

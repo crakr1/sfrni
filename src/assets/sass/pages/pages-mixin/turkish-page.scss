@@ -1,36 +1,37 @@
 @import "./mixins-page.scss";
 
 // تنسيق الوان الجزء العلوي والسلفي من الصفحة
-$turkish-pageNavAndFooter :#820000;
+$pageNavAndFooter :#820000;
 
 // تنسيق الوان الخلفية للاقسام
-$turkish-pageBackground-color : #F2DEBA;
+$pageBackground-color : #F2DEBA;
 
 // تنتسيق لون العنواين
-$turkish-pageTitle-color : #5F7161;
+$pageTitle-color : #5F7161;
 
 // تنسيق لون الزر 
-$turkish-btn-color :#4E6C50;
-$turkish-btn-hover :rgb(105, 111, 106);
+$btn-color :#4E6C50;
+$btn-hover :rgb(105, 111, 106);
 
 // تنسيق الوان الكروت
-$turkish-pageCard : #D0C9C0 ;
+$pageCard : #D0C9C0 ;
 
 
-body {
-    .turkish-transport {
+.turkish {
+    .transport {
         @include head;
-        background-color: $turkish-pageNavAndFooter;
+        background-color: $pageNavAndFooter;
 
-        .turkish-a { 
+        .a { 
             @include minLinks;
-            color: $turkish-pageBackground-color;
+            color: $pageBackground-color;
+
+            &:hover,
+            &:active {
+                background-color: $btn-hover;
+            }
         }
-        .turkish-a:hover,
-        .turkish-a:active {
-            background-color: $turkish-btn-hover;
-        }
-        .turkish-span{
+        .span{
             @include spanInHeader();
             color: black;
          }
@@ -38,85 +39,78 @@ body {
     }
     .accordion {
         .card {
-            background-color: $turkish-pageBackground-color ;
+            background-color: $pageBackground-color ;
         }
     }
-    .turkish-info {
+    .info {
         @include info();
-        background-color: $turkish-pageBackground-color ;
+        background-color: $pageBackground-color ;
 
 
-        .turkish-desc {
+        .desc {
             @include desc();
         }
     }
 
 
-    .turkish-gallery {
-        @include gallery();
-        background-color: $turkish-pageBackground-color ;
+    .gallery {
+        background-color: $pageBackground-color;
+        .close {
+            font-size: 1.5rem;
+          }
+          
+          .col-12 img {
+            cursor: pointer;
+            width: 100%;
+          }
+          
+          .col-12 img:hover {
+            opacity: 1;
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          }
 
-        .full-gallery-gallery{
-
-
-            .turkish-costm-btn{
-                @include button;
-                background-color: $turkish-btn-color;
+          .modal {
+            top: 10% ;
+          }
+    }
+    .contact {
+        background-color: $pageNavAndFooter;
+    
+        .title {
+            color: $btn-color;
+            @include turkish-title
+        }
+    
+        .title-of-iframe {
+           @include title-of-iframe;
+           color: $btn-color
+        }
+    
+        iframe{
+           @include iframe;
+        }
+    
+        .contact-style {
+            @include contact-style;
+        }
+    
+        .cont {
+          @include cont;
+          color: $btn-color;
+        }
+    
+        .social {
+           @include social ;
+    
+            .a-social{
+                @include a-social;
+                color: $btn-color;
             }
-
-            .overlay{
-                @include overlay;
-                background-color: $turkish-pageNavAndFooter;
-
-
-                img{
-                    @include overlay-img;
-                }
+            .a-social:hover{
+                color: $btn-hover;
+                background-color: $btn-color;
             }
         }
-    }
-
-    .turkish-buy {
-        background-color: $turkish-pageBackground-color 
     }
 }
 
-.turkish-contact {
-    background-color: $turkish-pageNavAndFooter;
-
-    .turkish-title {
-        color: $btn-color;
-        @include turkish-title
-    }
-
-    .title-of-iframe {
-       @include title-of-iframe;
-       color: $turkish-btn-color
-    }
-
-    iframe{
-       @include iframe;
-    }
-
-    .contact-style {
-        @include contact-style;
-    }
-
-    .cont {
-      @include cont;
-      color: $turkish-btn-color;
-    }
-
-    .social {
-       @include social ;
-
-        .a-social{
-            @include a-social;
-            color: $turkish-btn-color;
-        }
-        .a-social:hover{
-            color: $egypt-btn-hover;
-            background-color: $turkish-btn-color;
-        }
-    }
-}

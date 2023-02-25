@@ -18,7 +18,7 @@ devServer: {
       static: {
         directory: path.join(__dirname, "build"),
       },
-      port: 9000,
+      port: 6500,
       devMiddleware: {
         writeToDisk: true,
       },
@@ -51,6 +51,7 @@ devServer: {
                   ]
             },
             
+
               {
                 test: /\.(jpg|png)$/i,
                 use: {

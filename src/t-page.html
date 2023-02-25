@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>رحلة الى اهرامات مصر</title>
 </head>
-<body>
+<body class="turkish">
     <div class="container-fluid">
-        <div class="turkish-transport">
+        <div class="transport">
             <div class="row">
                 <div class="link">
-                    <a href="./index.html" class="turkish-a">الصفحه الرئيسة<i class="fa-solid fa-backward"></i></a>
+                    <a href="./index.html" class="a">الصفحه الرئيسة<i class="fa-solid fa-backward"></i></a>
                 </div>
-                <span class="turkish-span">رحلة إلى مدينة إسطنبول في تركيا </span>
+                <span class="span">رحلة إلى مدينة إسطنبول في تركيا </span>
             </div>
         </div>
-        <section class="turkish-info text-center">
+        <section class="info text-center">
             <h3 class="title">
                 رحلة إلى مدينة إسطنبول في تركيا            
             </h3>
@@ -82,115 +82,91 @@
                   </div>
               </div>
         </section>
-        <section class="turkish-gallery text-center">
-            <h4 class="title text-center">
-                 معرض الصور
-            </h4>
-            <div  class="carousel slide  carousel-galrey-md d-none d-md-block " data-ride="carousel">
+        <section class="gallery">
+          <div class="container">
+            <div class="row d-flex flex-wrap align-items-center" data-toggle="modal" data-target="#lightbox">
+              <div class="col-12 col-md-4">
+                
+            <img src="./assets/images/t-madre.png" data-target="#indicators" data-slide-to="0" alt="" /> 
+              </div>
+              <div class="col-12 col-md-4">
+                   <img src="./assets/images/t-torksh.png" data-target="#indicators" data-slide-to="1" alt="" />
+              </div>
+              <div class="col-12 col-md-4">
+                 <img src="./assets/images/t-ttrr.png" data-target="#indicators" data-slide-to="2"  alt="" />
+              </div>
+              <div class="col-12 col-md-4">
+                   <img src="./assets/images/t-turkea.png" data-target="#indicators" data-slide-to="3" alt="" />
+              </div>
+              <div class="col-12 col-md-4">
+                   <img src="./assets/images/t-ttrruu.png" data-target="#indicators" data-slide-to="4"  alt="" />
+              </div>
+              <div class="col-12 col-md-4">
+                   <img src="./assets/images/t-ttrroo.png" data-target="#indicators" data-slide-to="5" alt="" />
+              </div>
+            </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="lightbox" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close text-right p-2" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  <div id="indicators" class="carousel slide" data-interval="false">
+              <ol class="carousel-indicators">
+                <li data-target="#indicators" data-slide-to="0" class="active"></li>
+                <li data-target="#indicators" data-slide-to="1"></li>
+                <li data-target="#indicators" data-slide-to="2"></li>
+                <li data-target="#indicators" data-slide-to="3"></li>
+                <li data-target="#indicators" data-slide-to="4"></li>
+                <li data-target="#indicators" data-slide-to="5"></li>
+              </ol>
               <div class="carousel-inner">
+                
                 <div class="carousel-item active">
-                    <div class="row">
-                      <div class="col-4">
-                        <img src="./assets/images/t-madre.png"  alt="...">
-                      </div>
-                      <div class="col-4">
-                        <img src="./assets/images/t-torksh.png" alt="">
-                      </div>
-                      <div class="col-4">
-                        <img src="./assets/images/t-ttrr.png" alt="">
-                      </div>
-                    </div>
+                  
+                  <img class="d-block w-100" src="./assets/images/t-madre.png" alt="First slide">
                 </div>
-                <div class="carousel-item ">
-                  <div class="row">
-                    <div class="col-4">
-                      <img src="./assets/images/t-ttrroo.png" alt="...">
-                    </div>
-                    <div class="col-4">
-                      <img src="./assets/images/t-ttrruu.png" alt="">
-                    </div>
-                    <div class="col-4">
-                      <img src="./assets/images/torki.png" alt="">
-                    </div>
-                  </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/images/t-torksh.png" alt="Second slide">
                 </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/images/t-ttrr.png" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/images/t-turkea.png" alt="Fourth slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/images/t-ttrruu.png" alt="Fifth slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/images/t-ttrroo.png" alt="Sixth slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#indicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-          </div>  
-          <div class="carousel slide carousel-galrey d-md-none d-block" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img src="./assets/images/t-madre.png" alt="">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/images/t-torksh.png" alt="">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/images/t-ttrr.png" alt="">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/images/t-ttrroo.png" alt="">
-              </div>
-              <div class="carousel-item">
-                  <img src="./assets/images/t-ttrruu.png" alt="">
-              </div>
-              <div class="carousel-item">
-                  <img src="./assets/images/t-turkea.png" alt="">
+            
+                </div>
               </div>
             </div>
-          </div>
-          <div class="full-gallery-gallery">
-              <button class="btn turkish-costm-btn" id="overlay" >استعراض الصور</button>
-              <div class="overlay d-none" >
-                  <div class="carousel-galrey">
-                  <div class="carousel slide "  data-ride="carousel" id="overlay-carousel">
-                      <div class="carousel-inner">
-                          <div class="carousel-item active">
-                              <img src="./assets/images/t-madre.png" alt="">
-                          </div>
-                          <div class="carousel-item">
-                              <img src="./assets/images/t-torksh.png" alt="">
-                          </div>
-                          <div class="carousel-item">
-                              <img src="./assets/images/t-ttrr.png" alt="">
-                          </div>
-                          <div class="carousel-item">
-                              <img src="./assets/images/t-ttrroo.png" alt="">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./assets/images/t-ttrruu.png" alt="">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./assets/images/t-turkea.png" alt="">
-                          </div>
-                          <div class="carousel-item">
-                              <img src="./assets/images/torki.png" alt="">
-                          </div>
-                          <div class="carousel-item">
-                              <img src="./assets/images/t-ttrr.png" alt="">
-                          </div>
-                      </div>
-                  </div>
-                    <button class="carousel-control-prev" type="button" data-target="#overlay-carousel" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-target="#overlay-carousel" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </button>
-                    <button class="btn turkish-costm-btn" id="overlay-none"> الخروج من المعرض</button>
-                  </div>
-              </div>
           </div>
 
-        </section>
-        <section class="turkish-buy text-center">
+          <div class="buy text-center">
             <a href="#" class="btn costm-btn" >
                 احجز رحلتك الان
             </a>
+        </div>
         </section>
         <footer>
-          <div class="turkish-contact">
+          <div class="contact">
             <div class="container text-center">
               <h2 class=" turkish-title">
                 تواصل معنا
@@ -235,6 +211,6 @@
             </div>
           </div>
         </footer>
-    </div>
+  </div>
 </body>
 </html>
